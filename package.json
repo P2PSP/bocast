@@ -3,8 +3,7 @@
   "version": "0.1.0",
   "description": "A tracker for the p2psp project",
   "main": "server.js",
-  "scripts": {
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/P2PSP/tracker.git"
@@ -20,6 +19,7 @@
   },
   "homepage": "https://github.com/P2PSP/tracker#readme",
   "dependencies": {
+    "body-parser": "^1.15.0",
     "express": "^4.13.4"
   }
 }
