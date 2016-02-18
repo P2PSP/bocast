@@ -1,7 +1,7 @@
 'use strict';
 
 var express = require('express');
-var api = require('lib/api.js');
+var api = require('./lib/api.js');
 
 var app = express();
 var PORT = 8080;
