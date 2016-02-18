@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Add methods to handle API requests
-api(app);
+app.use('/api', api);
 
 app.get('/', function (req, res) {
   res.send('Channel list.');
