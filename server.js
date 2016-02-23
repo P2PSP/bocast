@@ -2,7 +2,9 @@
 
 var express = require('express');
 var bodyParser = require('body-parser');
+var path = require('path');
 var api = require('./lib/api.js');
+var channels = require('./lib/channels.js');
 
 var app = express();
 var PORT = 8080;
@@ -15,6 +17,16 @@ app.use('/api', api);
 
 app.get('/', function (req, res) {
   res.send('Channel list.');
+});
+
+app.get('/add', function (req, res) {
+  res.sendFile(path.join(__dirname + '/www/index.html'));
+});
+
+app.post('/channels', function (req, res) {
+  channels.addChannel(req.body);
+  res.send('Channel added.');
+  res.end();
 });
 
 app.listen(PORT, function () {
