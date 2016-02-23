@@ -1,5 +1,5 @@
-# tracker
-A tracker for the P2PSP live streaming system.
+# bocast
+A server for the P2PSP live streaming system.
 
 # Install
 
@@ -22,7 +22,7 @@ The API is located under `/api`
 ## /channels
 
 * `GET` - Obtains the list of channels
-* `PUT` - Creates a new channel 
+* `POST` - Creates a new channel 
 
 ## /channels/:id
 
