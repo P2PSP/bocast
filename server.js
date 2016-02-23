@@ -23,12 +23,6 @@ app.get('/add', function (req, res) {
   res.sendFile(path.join(__dirname + '/www/index.html'));
 });
 
-app.post('/channels', function (req, res) {
-  channels.addChannel(req.body);
-  res.send('Channel added.');
-  res.end();
-});
-
 app.listen(PORT, function () {
   console.log('Tracker listening on port ' + PORT);
 });
