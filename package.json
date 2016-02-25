@@ -4,7 +4,7 @@
   "description": "A tracker for the p2psp project",
   "main": "server.js",
   "scripts": {
-    "watch": "nodemon --watch lib ./server.js"
+    "watch": "nodemon --watch lib --watch server.js ./server.js"
   },
   "repository": {
     "type": "git",
